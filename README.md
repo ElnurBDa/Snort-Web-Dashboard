@@ -9,6 +9,7 @@ npm run dev #2
 
 # Tech Stack
 Framework - Vite
+
 UI library - https://ui.mantine.dev/
 
 # npm scripts
