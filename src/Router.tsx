@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       <Layout activePage="Block List">
         <BlockListPage />
       </Layout>
-    ),
+    )
   },
 ]);
 

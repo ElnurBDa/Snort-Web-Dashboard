@@ -3,13 +3,22 @@ It is designed as dashboard for Snort alerts and other logs
 
 # How?
 ```bash
-npm i #1
-npm run dev #2
+npm i #1 install dependencies
+touch .env #2 create this file
+echo 'VITE_BACKEND_API="http://localhost:3000/"' > .env #3 add api key
+npm run dev #4 run the app
+
 ```
 
 # Tech Stack
 Framework - Vite
 UI library - https://ui.mantine.dev/
+
+
+
+
+
+
 
 # npm scripts
 

@@ -87,7 +87,7 @@ export function BlockIpTable({data}: {data: BlockIpData[]}) {
         setSearch(value);
         setSortedData(sortData(data, { sortBy, reversed: reverseSortDirection, search: value }));
     };
-
+    console.log(sortedData);
     const rows = sortedData.map((row, index) => (
         <Table.Tr key={index}>
             <Table.Td>{row.time}</Table.Td>

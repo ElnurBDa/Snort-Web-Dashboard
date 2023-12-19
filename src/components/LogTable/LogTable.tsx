@@ -88,6 +88,28 @@ export function LogTable({data}: {data: LogData[]}) {
         setSortedData(sortData(data, { sortBy, reversed: reverseSortDirection, search: value }));
     };
 
+    const blockIp = (ip:string, msg:any) => {
+        fetch(import.meta.env.VITE_BACKEND_API+'block', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ ip, msg }),
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(result => {
+          console.log('Success:', result);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      };
+
     const rows = sortedData.map((row, index) => (
         <Table.Tr key={index}>
             <Table.Td>{row.time}</Table.Td>
@@ -99,7 +121,7 @@ export function LogTable({data}: {data: LogData[]}) {
             <Table.Td>{row.dst_ip}</Table.Td>
             <Table.Td>{row.dst_port}</Table.Td>
             <Table.Td>
-                <Button color="red" onClick={() => console.log(row.src_ip)}>
+                <Button color="red" onClick={() => blockIp(row.src_ip, row)}>
                     Block IP
                 </Button>
             </Table.Td>
