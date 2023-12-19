@@ -12,6 +12,7 @@ npm run dev #4 run the app
 
 # Tech Stack
 Framework - Vite
+
 UI library - https://ui.mantine.dev/
 
 
