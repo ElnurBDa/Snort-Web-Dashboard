@@ -11,16 +11,7 @@ export function Welcome() {
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This web dashboard is designed for detecting and blocking Snort alerts. It provides a user-friendly interface to manage and monitor Snort intrusion detection system.
-        To learn more about Snort-Web-Dashboard and its integration with Snort, please contact {' '}
-        <Anchor href="https://www.linkedin.com/in/elnurbda/" size="lg">
-          Elnur Badalov
-        </Anchor>
-        {' '}or{' '}
-        <Anchor href="https://www.linkedin.com/in/yusifov-telman/" size="lg">
-          Telman Yusifov
-        </Anchor>
-        . To get started, please select a page from the sidebar.
+        This web dashboard is designed for detecting and blocking Snort alerts. It provides a user-friendly interface to manage and monitor Snort intrusion detection system. To get started, please select a page from the sidebar.
       </Text>
     </>
   );
