@@ -70,6 +70,7 @@
   },
   "packageManager": "yarn@4.0.1",
   "overrides": {
-    "@remix-run/router": "^1.23.2"
+    "@remix-run/router": "^1.23.2",
+    "@babel/runtime": "^7.26.10, 8.0.0-alpha.17"
   }
 }
