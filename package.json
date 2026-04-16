@@ -68,5 +68,8 @@
     "vite-tsconfig-paths": "^4.2.1",
     "vitest": "^0.34.6"
   },
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.0.1",
+  "overrides": {
+    "@remix-run/router": "^1.23.2"
+  }
 }
